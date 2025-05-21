@@ -1,0 +1,307 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8f0fb, #fff5f0);
+    color: #333;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-img {
+    height: 50px;
+}
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#nav-bar li {
+    margin-left: 2rem;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+#nav-bar a:hover {
+    color: #e57373;
+}
+#hamburger-btn {
+    display: none; /* Hidden by default in CSS-only */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+    padding: 0;
+    z-index: 11;
+}
+#mobile-menu {
+    display: none; /* Hidden by default in CSS-only */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* CSS-only way to show the mobile menu on focus (e.g., tabbing) - limited functionality */
+#hamburger-btn:focus + #mobile-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+#mobile-menu.active { /* Class added by JS - will not work without JS */
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+#mobile-menu .content {
+    background-color: #fff;
+    width: 80%;
+    max-width: 320px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+/* CSS-only way to slide in the mobile menu on focus of the hamburger button */
+#hamburger-btn:focus + #mobile-menu .content {
+    transform: translateX(0);
+}
+#mobile-menu.active .content { /* Class added by JS - will not work without JS */
+    transform: translateX(0);
+}
+#mobile-menu .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+}
+/* CSS-only way to (try to) close the menu - very limited, relies on losing focus */
+#mobile-menu .close-btn:focus ~ nav {
+    /* This is not a reliable way to close the menu with only CSS */
+}
+#mobile-menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#mobile-menu nav li {
+    margin-bottom: 1.5rem;
+}
+#mobile-menu nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+main {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+section {
+    margin-bottom: 4rem;
+}
+#features h2, #video-section h2, #pricing h2, #form h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.feature-box {
+    background: linear-gradient(to bottom, #fff, #f0f4c3);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.feature-box i {
+    font-size: 2rem;
+    color: #e57373;
+}
+.feature-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+.feature-box p {
+    color: #666;
+    line-height: 1.7;
+}
+ .feature-box img {
+    width: 100px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+#video-section {
+    text-align: center;
+}
+#video {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+#pricing {
+    text-align: center;
+}
+.price-card {
+    background: linear-gradient(to bottom, #fff, #f0f4c3);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+}
+.price-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 1rem;
+}
+.price-card p {
+    font-size: 1.25rem;
+    color: #e57373;
+    margin-bottom: 1.5rem;
+}
+.price-card ul {
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    text-align: left;
+}
+.price-card li {
+    margin-bottom: 0.75rem;
+    color: #666;
+}
+.price-card button {
+    background: linear-gradient(to right, #e57373, #ffb74d);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.price-card button:hover {
+    background: linear-gradient(to right, #d34d7d, #ff9800);
+}
+ .price-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#form {
+    background-color: rgba(248, 240, 251, 0.7);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#form h2 {
+    margin-bottom: 1.5rem;
+}
+#form form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+#form input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+#form input:focus {
+    outline: none;
+    border-color: #e57373;
+    box-shadow: 0 0 0 3px rgba(229,115,115,0.1);
+}
+#form button {
+    background: linear-gradient(to right, #e57373, #ffb74d);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#form button:hover {
+     background: linear-gradient(to right, #d34d7d, #ff9800);
+}
+footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    #nav-bar {
+        display: none;
+    }
+    #hamburger-btn {
+        display: block;
+    }
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    #form {
+        padding: 1.5rem;
+    }
+}

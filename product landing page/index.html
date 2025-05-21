@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Flower Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <img id="header-img" src="https://cdn1.iconfinder.com/data/icons/chunk/16/Flower-256.png" alt="Flower Shop Logo">
+            <h1>Raj Flower Shop</h1>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#video-section">Video</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#form">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn">☰</button>
+        </div>
+         <div id="mobile-menu" class="hidden">
+             <div class="content">
+                 <button class="close-btn">×</button>
+                 <nav>
+                     <ul>
+                         <li><a href="#features">Features</a></li>
+                         <li><a href="#video-section">Video</a></li>
+                         <li><a href="#pricing">Pricing</a></li>
+                         <li><a href="#form">Contact</a></li>
+                     </ul>
+                 </nav>
+             </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="features">
+            <h2>Features</h2>
+            <div class="grid-3">
+                <div class="feature-box">
+                    <img src="https://cdn1.iconfinder.com/data/icons/anchor/128/flower.png" alt="Fresh Flowers">
+                    <div>
+                        <h3>Fresh Flowers</h3>
+                        <p>We source the freshest flowers directly from local growers to ensure the highest quality.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                       <img src="https://cdn1.iconfinder.com/data/icons/shopping-e-commerce-10/33/truck_delivery-256.png" alt="Fast Delivery">
+                    <div>
+                        <h3>Fast Delivery</h3>
+                        <p>Our efficient delivery service ensures your flowers arrive fresh and on time, every time.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <img src="https://cdn3.iconfinder.com/data/icons/business-2-1-filled-outline-1/470/Layer21-256.png" alt="Quality Assurance">
+                    <div>
+                        <h3>Quality Assurance</h3>
+                        <p>We carefully inspect each arrangement to guarantee your complete satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Featured Flowers</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <div class="grid-3">
+                <div class="price-card">
+                    <img src="https://cdn0.iconfinder.com/data/icons/flowers-8/500/Flower_agile-02-256.png" alt="Roses Bouquet">
+                    <h3>Roses Bouquet</h3>
+                    <p>$50</p>
+                    <ul>
+                        <li>Classic Romance</li>
+                        <li>Perfect for Anniversaries</li>
+                        <li>Red, Pink, White</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                    <button>Select</button>
+                </div>
+                <div class="price-card">
+                    <img src="https://cdn4.iconfinder.com/data/icons/a-collection-of-virtual-gifts/100/gerberas_bouquet-256.png" alt="Mixed Bouquet">
+                    <h3>Mixed Bouquet</h3>
+                    <p>$75</p>
+                    <ul>
+                        <li>Vibrant & Colorful</li>
+                        <li>Great for Celebrations</li>
+                        <li>Variety of Flowers</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                    <button>Select</button>
+                </div>
+                <div class="price-card">
+                    <img src="https://cdn1.iconfinder.com/data/icons/spring-164/512/flower_basket-summer-floral-bouquet-spring-bloom-256.png" alt="Luxury Bouquet">
+                    <h3>Luxury Bouquet</h3>
+                    <p>$120</p>
+                    <ul>
+                        <li>Premium Selection</li>
+                        <li>Elegant Design</li>
+                        <li>Exotic Flowers</li>
+                        <li>Free Delivery</li>
+                    </ul>
+                    <button>Select</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero">
+          <h2>Contact Us</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <input id="submit" type="submit" value="Get Started" class="btn" />
+          </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Raj Flower Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
