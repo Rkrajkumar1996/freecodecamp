@@ -10,8 +10,8 @@ Here is the breakdown of the certifications I am tackling. I will update this li
 
 | Certification | Status | Key Topics Learned |
 | :--- | :--- | :--- |
-| **Responsive Web Design** | ⏳ In Progress / Done | HTML5, CSS3, Flexbox, Grid, Responsive Design |
-| **JavaScript Algorithms & Data Structures** | ⏳ Planned / In Progress | JS Variables, OOP, Functional Programming, DSA |
+| **Responsive Web Design** | ⏳  Done | HTML5, CSS3, Flexbox, Grid, Responsive Design |
+| **JavaScript Algorithms & Data Structures** | ⏳ In Progress | JS Variables, OOP, Functional Programming, DSA |
 | **Front End Development Libraries** | ⏳ Planned | Bootstrap, SASS, React, Redux |
 | **Back End Development and APIs** | ⏳ Planned | Node.js, Express, MongoDB, Mongoose |
 
