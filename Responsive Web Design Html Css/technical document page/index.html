@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Build a Technical Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>JS Introduction</header>
+            <ul>
+                <li><a class="nav-link" href="#What_is_JavaScript">What is JavaScript</a></li>
+                <li><a class="nav-link" href="#Hello_world">Hello World</a></li>
+                <li><a class="nav-link" href="#What_happened">What happened</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Comments">Comments</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc" class="box">
+            <section class="main-section" id="What_is_JavaScript">
+                <header>What is JavaScript</header>
+                <p>JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.</p>
+                <p>JavaScript is a powerful programming language that can add interactivity to a website. It was invented by Brendan Eich.</p>
+                <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+                <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+                <ul>
+                    <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+                    <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Disqus or Facebook.</li>
+                    <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Hello_world">
+                <header>Hello World</header>
+                <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.
+                </p>
+                <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! </p>
+                <ol type="1">                    
+                <li>Go to your test site and create a new folder named Within the <code>scripts</code>  folder, create a new text document called <code>main.js</code>, and save it.</li>
+                <li>In your index.html file, enter this code on a new line, just before the closing <code>&lt;/body&gt;</code> tag:</li>
+                <code>&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</code> 
+                <li>This is doing the same job as the <code>&lt;link&gt;</code> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+                <code>const myHeading = document.querySelector("h1");
+                    myHeading.textContent = "Hello world!";</code>
+                    <li>Make sure the HTML and JavaScript files are saved. Then load <code>index.html</code> in your browser. You should see something like this:</li>
+            </ol>
+            </section>
+            <section class="main-section" id="What_happened">
+                <header>What Happened</header>
+                <p>The heading text changed to Hello world! using JavaScript. You did this by using a function called <code>querySelector()</code> to grab a reference to your heading, and then store it in a variable called myHeading. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.</p>
+                <p>Following that, the code set the value of the <code>myHeading</code> variable's <code>textContent</code> property (which represents the content of the heading) to Hello world!.</p>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>Variables are containers that store values. You start by declaring a variable with the let keyword, followed by the name you give to the variable: <code>let myVariable;</code></p>
+                <p>A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons.</p>
+                <p>JavaScript is case sensitive. This means <code>myVariable</code> is not the same as <code>myvariable</code>. If you have problems in your code, check the case!</p>
+            </section>
+            <section class="main-section" id="Comments">
+                <header>Comments</header>
+                <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+                <code>/*
+                    Everything in between is a comment.
+                    */</code>
+                    <p>f your comment contains no line breaks, it's an option to put it behind two slashes like this:
+                        <code>   // This is a comment</code></p>
+            </section>
+        </main>
+    </body>
+</html>

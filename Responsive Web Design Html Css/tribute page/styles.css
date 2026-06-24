@@ -1,0 +1,65 @@
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+#tribute-title {
+    text-align: center;
+}
+#image {
+            display: block;
+        height: auto;
+}
+
+body {
+    background-color: rgb(131, 248, 194);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+}
+#img-div{
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+ul 
+{
+ text-align: justify;
+ max-width: 800px;
+ margin: 5px auto 40px auto;
+ line-height: 1.5;
+}
+li {
+    margin: 20px;
+}
+
+.poem 
+    {
+        text-align: left;
+        max-width: 750px;
+        margin: 5px auto 40px auto;
+        line-height: 1.5;
+       }
+
+       a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+    color: #ff0000
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {color: #ffcc00;}
