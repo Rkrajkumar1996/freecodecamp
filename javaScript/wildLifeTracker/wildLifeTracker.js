@@ -50,3 +50,4 @@ const hasHabitat = (animal) => {
 console.log(hasHabitat(tiger));
 console.log(hasHabitat(elephant));
 
+console.log("sherin jepastina")
