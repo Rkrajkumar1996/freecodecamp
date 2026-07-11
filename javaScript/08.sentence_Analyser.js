@@ -43,3 +43,23 @@ function getPunctuationCount(sentence) {
 
 const punctuationCount = getPunctuationCount("WHAT?!?!?!?!?");
 console.log(`Punctuation Count: ${punctuationCount}`);
+
+function getWordCount(sentence) {
+  if (sentence.trim() === "") {
+    return 0;
+  }
+  
+  const words = sentence.trim().split(" ");
+  let count = 0;
+
+  for (const word of words) {
+    if (word !== "") {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+const wordCount = getWordCount("I love freeCodeCamp");
+console.log(`Word Count: ${wordCount}`);
