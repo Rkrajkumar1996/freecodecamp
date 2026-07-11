@@ -27,3 +27,19 @@ function getConsonantCount(sentence) {
 
 const consonantCount = getConsonantCount("Coding is fun");
 console.log(`Consonant Count: ${consonantCount}`);
+
+
+function getPunctuationCount(sentence) {
+  const punctuations = ".,!?;:-()[]{}\"'–";
+  let count = 0;
+
+  for (const char of sentence) {
+    if (punctuations.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const punctuationCount = getPunctuationCount("WHAT?!?!?!?!?");
+console.log(`Punctuation Count: ${punctuationCount}`);
